@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using SocialMedia.Models.DTOs;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SocialMedia.Models.Entities
 {
@@ -13,5 +14,8 @@ namespace SocialMedia.Models.Entities
         [ForeignKey("Profile")]
         public Guid ProfileId { get; set; }
         public Profile? Profile { get; set; }
+
+        public ICollection<PostComments>? Comments { get; set; }
+
     }
 }

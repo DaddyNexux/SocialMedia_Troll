@@ -4,8 +4,7 @@ namespace SocialMedia.Models.DTOs
 {
     public class ProfileDTO : BaseDTO
     {
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
+        public string? Fullname { get; set; }
         public string? Bio { get; set; }
         public string? AvatarUrl { get; set; }
         public UserDTO? User { get; set; }

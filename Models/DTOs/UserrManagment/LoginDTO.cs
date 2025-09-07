@@ -13,7 +13,8 @@
         public string Username { get; set; }
         public string FullName { get; set; }
         public string Role { get; set; }
-        public List<string> permissions { get; set; } = new List<string>();
+        public Guid profileId { get; set; }
+        
     }
 
 }
